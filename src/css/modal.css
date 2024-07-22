@@ -1,0 +1,141 @@
+.modal {
+    position: fixed;
+    max-width: 50vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+    z-index: 1;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    color: #000;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 25px;
+    color: #d069a1;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    border: none;
+    background-color: #00000000;
+    cursor: pointer;
+    transition: 700ms;
+    width: 30px;
+}
+
+.close:hover {
+    color: #3bcc87;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+    color: #ffffff;
+    background-color: #3BCC87;
+    border-color: #34b979;
+    transition: 700ms;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    color: #ffffff;
+    background-color: #d069a1;
+    border-color: #b8598d;
+}
+
+
+@media (max-width: 1119px) {
+
+    .modal {
+        max-width: 100vw;
+        top: 25%;
+        left: 0;
+    }
+}
+
+@media (min-width: 393px) and (max-width:796px) {
+    .modal {
+        max-width: 100vw;
+        top: 25%;
+        left: 0;
+    }
+}
+
+@media (max-width: 393px) {
+    .modal {
+        max-width: 100vw;
+        top: 25%;
+        left: 0;
+    }
+
+}
